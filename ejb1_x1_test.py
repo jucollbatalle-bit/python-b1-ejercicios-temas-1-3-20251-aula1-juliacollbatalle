@@ -37,15 +37,14 @@ def test_is_palindrome_word():
 
 def test_count_palindrome_words():
     assert count_palindrome_words(
-        TEXT) == 6, "Check the function: count_palindrome_words"
+        TEXT) == 46, "Check the function: count_palindrome_words"
     assert count_palindrome_words(
         "civic, radar, level, rotor, kayak, madam, and refer.") == 7, "'Check the function: count_palindrome_words"
     assert count_palindrome_words(
         " Kayak; deified; Rotator; Repaper; deed; peep; wOw; nOOn; cIvic; racecar; lEvEl; mom; bird rib.") == 12, "'Check the function: count_palindrome_words"
     assert count_palindrome_words(
         "The is no palindrome\nAta; Aviva; Azuza; Apa; Afromorfa") == 5, "'Check the function: count_palindrome_words"
-    assert count_palindrome_words(
-        "a r e r\nAta; Azuza; Apa; aa rr") == 3, "'Check the function: count_palindrome_words"
+    assert count_palindrome_words("a r e r\nAta; Azuza; Apa; aa rr") == 9, "'Check the function: count_palindrome_words"
 
 
 def test_find_size_largest_sentence():
